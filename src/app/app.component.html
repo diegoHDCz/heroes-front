@@ -3,4 +3,10 @@
 >
   {{ title }}
 </h1>
-<app-heroes></app-heroes>
+<nav class="flex items-center justify-center">
+  <a routerLink="/heroes" >Heroes</a>
+</nav>
+<div class="flex">
+  <router-outlet></router-outlet>
+  <app-messages></app-messages>
+</div>
