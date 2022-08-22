@@ -1,0 +1,9 @@
+
+<h2 class="text-blue-500 text-3xl font-bold py-5 my-5 text-center ">Top Heroes</h2>
+<div class="heroes-menu  flex align-center justify-evenly ">
+  <a *ngFor="let hero of heroes"
+    routerLink="/detail/{{hero.id}}">
+    {{hero.name}}
+  </a>
+</div>
+

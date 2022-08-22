@@ -7,20 +7,10 @@
     </h2>
     <div class="mt-3">
       <ul>
-        <li *ngFor="let hero of heroes" class="py-1">
-          <button
-            [class.selected]="hero === selectedHero"
-            type="button"
-            class="heroes"
-            (click)="onSelect(hero)"
-          >
-            <div class="flex content-around">
-              <span>{{ hero.id }}</span>
-              <span class="ml-2 hover:font-bold hover:text-blue-500">
-                {{ hero.name }}
-              </span>
-            </div>
-          </button>
+        <li *ngFor="let hero of heroes" class="py-3">
+          <a class="px-5 align-center justify-center text-center text-lg" routerLink="/detail/{{hero.id}}">
+            <span class="mr-2 font-extrabold" >{{hero.id}}|</span>{{hero.name}}
+          </a>
         </li>
       </ul>
     </div>

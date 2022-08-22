@@ -4,9 +4,11 @@
   {{ title }}
 </h1>
 <nav class="flex items-center justify-center">
-  <a routerLink="/heroes" >Heroes</a>
+
+  <a class="mr-4" routerLink="/dashboard">Dashboard</a>
+  <a routerLink="/heroes">Heroes</a>
+
 </nav>
-<div class="flex">
+
   <router-outlet></router-outlet>
   <app-messages></app-messages>
-</div>
